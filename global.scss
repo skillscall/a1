@@ -1,0 +1,95 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: calc(100vh - 108px);
+  // max-width: 1024px;
+  margin: 0 auto;
+}
+
+// Custom Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9e4e5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bcc6c6;
+}
+
+// Colors
+$green-1: #44d7c9;
+$green-2: #142537;
+$green-3: #d9e6e5;
+$green-4: #1ea0ae;
+$white-1: #ffffff;
+$black-1: #000000;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: "Helvetica";
+}
+
+.btn {
+  outline: none;
+  font-size: 14px;
+  width: 100px;
+  height: 36px;
+  border-radius: 50px;
+  transition: 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  &-pri {
+    border: none;
+    background: $green-1;
+    -webkit-appearance: button;
+    padding: 2px 3px;
+    color: $green-2;
+  }
+  &-sec {
+    border: 2px solid $green-1;
+    background: transparent;
+    color: $green-1;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 40px;
+  outline: none;
+  border: none;
+  background: $green-3;
+  padding: 0 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 360px;
+}

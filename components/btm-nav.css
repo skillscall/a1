@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btm-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .btm-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #eeeeee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .btm-nav-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .btm-nav-wrapper .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 60%;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+  }
+  .btm-nav-wrapper .select:hover {
+    opacity: 100%;
+  }
+  .btm-nav-wrapper .select img {
+    width: 21px;
+  }
+  .btm-nav-wrapper .select p {
+    margin: 4px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .btm-nav .active {
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=btm-nav.css.map */
